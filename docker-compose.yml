@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: lyftr_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - WEBHOOK_SECRET=my_docker_secret_key
+      - DATABASE_URL=sqlite:////data/app.db
+    volumes:
+      # Maps your local data folder to the container
+      - ./data:/data
+    restart: unless-stopped

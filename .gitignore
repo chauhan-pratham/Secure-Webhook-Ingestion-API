@@ -1,0 +1,18 @@
+# Python Bytecode (Junk)
+__pycache__/
+*.py[cod]
+
+# Virtual Environments (Local only)
+venv/
+
+# Environment Variables (Secrets - NEVER upload this!)
+.env
+
+# Database & Data (Local test data)
+*.db
+*.sqlite3
+data/
+
+# IDE Settings (VS Code / PyCharm junk)
+.vscode/
+.idea/
